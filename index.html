@@ -18,7 +18,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             padding: 1.5rem;
-            max-width: 250px;
+            width: 250px;
             text-align: center;
             transition: box-shadow 0.2s;
         }
@@ -26,13 +26,19 @@
             box-shadow: 0 4px 16px rgba(0,0,0,0.12);
         }
         .racket-card img {
-            max-width: 120px;
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
             margin-bottom: 1rem;
         }
         .racket-card a {
             text-decoration: none;
             color: #2c3e50;
             font-weight: bold;
+        }
+        .racket-name {
+            font-size: 0.9em;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -45,26 +51,26 @@
         <div class="racket-list">
             <div class="racket-card">
                 <a href="racket10.html">
-                    <img src="img/racket10.png" alt="Yonex VS Core 98 Sand Beige 2023">
-                    <div>Racket 10 - Yonex VS Core 98 Sand Beige 2023</div>
+                    <img src="img/racket10.png" alt="Yonex VS Core 98 2023">
+                    <div class="racket-name">Racket 10 - Yonex VS Core 98 2023</div>
                 </a>
             </div>
             <div class="racket-card">
                 <a href="racket11.html">
                     <img src="img/racket11.png" alt="Yonex VS Core 98 2023">
-                    <div>Racket 11 - Yonex VS Core 98 2023</div>
+                    <div class="racket-name">Racket 11 - Yonex VS Core 98 2023</div>
                 </a>
             </div>
             <div class="racket-card">
                 <a href="racket12.html">
-                    <img src="img/racket12.png" alt="Yonex VS Core 98 2023">
-                    <div>Racket 12 - Yonex VS Core 98 2023</div>
+                    <img src="img/racket12.png" alt="Yonex VS Core 98 Tour 2023">
+                    <div class="racket-name">Racket 12 - Yonex VS Core 98 Tour 2023</div>
                 </a>
             </div>
             <div class="racket-card">
                 <a href="racket13.html">
                     <img src="img/racket13.png" alt="Yonex VS Core 98 Tour 2023">
-                    <div>Racket 13 - Yonex VS Core 98 Tour 2023</div>
+                    <div class="racket-name">Racket 13 - Yonex VS Core 98 Sand Beige 2023</div>
                 </a>
             </div>
         </div>
