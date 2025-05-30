@@ -11,7 +11,7 @@
             padding: 1rem;
             background: #f8f8f8;
             border-radius: 8px;
-            max-width: 500px;
+            max-width: 800px;
         }
         .racket-image {
             max-width: 300px;
@@ -31,6 +31,18 @@
         .stringing-log th {
             background: #eaeaea;
         }
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .specs-section {
+            margin-bottom: 1rem;
+        }
+        .specs-section h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
         @media (max-width: 600px) {
             .racket-specs, .stringing-log { font-size: 0.95em; }
             .racket-image { max-width: 90vw; }
@@ -45,15 +57,42 @@
         <!-- Replace racket-template.png with your image file -->
         <img src="racket-template.png" alt="Tennis Racket" class="racket-image">
         <section class="racket-specs">
-            <h2>Racket Specs</h2>
-            <ul>
-                <!-- Fill in your specs below -->
-                <li><strong>Head Size:</strong> </li>
-                <li><strong>Swing Weight:</strong> </li>
-                <li><strong>Balance Point:</strong> </li>
-                <li><strong>Grip Size:</strong> </li>
-                <li><strong>Weight:</strong> </li>
-            </ul>
+            <h2>Racket Specifications</h2>
+            <div class="specs-grid">
+                <div class="specs-section">
+                    <h3>Physical Specs</h3>
+                    <ul>
+                        <li><strong>Head Size:</strong> 98 in² / 632.26 cm²</li>
+                        <li><strong>Length:</strong> 27 in / 68.58 cm</li>
+                        <li><strong>Strung Weight:</strong> 11.4 oz / 323 g</li>
+                        <li><strong>Balance:</strong> 12.79 in / 32.49 cm / 6 pts HL</li>
+                        <li><strong>Swingweight:</strong> 318</li>
+                        <li><strong>Stiffness:</strong> 62</li>
+                        <li><strong>Beam Width:</strong> 23mm / 23mm / 21mm</li>
+                    </ul>
+                </div>
+                <div class="specs-section">
+                    <h3>Technical Details</h3>
+                    <ul>
+                        <li><strong>Composition:</strong> 2G-NAMD FLEXFORCE/H.M. GRAPHITE</li>
+                        <li><strong>Power Level:</strong> Low-Medium</li>
+                        <li><strong>Stroke Style:</strong> Medium-Full</li>
+                        <li><strong>Swing Speed:</strong> Medium-Fast</li>
+                        <li><strong>Racquet Colors:</strong> Beige</li>
+                        <li><strong>Grip Type:</strong> Yonex Synthetic</li>
+                    </ul>
+                </div>
+                <div class="specs-section">
+                    <h3>Stringing Information</h3>
+                    <ul>
+                        <li><strong>String Pattern:</strong> 16 Mains / 19 Crosses</li>
+                        <li><strong>Mains Skip:</strong> 7T, 9T, 8H</li>
+                        <li><strong>Stringing Type:</strong> Two Pieces</li>
+                        <li><strong>Shared Holes:</strong> No</li>
+                        <li><strong>String Tension Range:</strong> 45-60 pounds</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Stringing Log</h2>
