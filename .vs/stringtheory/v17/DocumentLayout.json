@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\racket13.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:racket13.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 28,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -131,32 +122,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEgAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-30T14:34:49.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "racket13.html",
-              "DocumentMoniker": "C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\racket13.html",
-              "RelativeDocumentMoniker": "racket13.html",
-              "ToolTip": "C:\\Users\\mark.BLUEMARBLE\\source\\repos\\bluemarble\\stringtheory\\racket13.html",
-              "RelativeToolTip": "racket13.html",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-30T14:34:42.575Z",
-              "EditorCaption": ""
             }
           ]
         }
