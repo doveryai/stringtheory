@@ -31,39 +31,29 @@
             margin: 2rem auto 1rem auto;
         }
         .stringing-log {
-            max-width: 800px;
+            width: 100%;
+            border-collapse: collapse;
             margin: 2rem 0;
+            max-width: 800px;
         }
-        .string-entry {
-            background: #f8f8f8;
+        .stringing-log th, .stringing-log td {
             border: 1px solid #ccc;
-            border-radius: 6px;
-            padding: 0.75rem 1rem;
-            margin-bottom: 0.75rem;
-        }
-        .string-entry .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-bottom: 0.25rem;
-        }
-        .string-entry .row:last-child {
-            margin-bottom: 0;
-        }
-        .string-entry .kv {
+            padding: 0.5rem;
+            text-align: center;
             white-space: nowrap;
         }
-        .string-entry .kv strong {
-            color: #555;
+        .stringing-log th {
+            background: #eaeaea;
         }
-        .string-entry .notes {
-            color: #666;
+        .stringing-log .notes-row td {
+            text-align: left;
             font-style: italic;
+            color: #666;
+            white-space: normal;
         }
         @media (max-width: 600px) {
             .racket-specs, .stringing-log { font-size: 0.95em; }
             .racket-image { max-width: 90vw; }
-            .string-entry .row { gap: 0.75rem; }
         }
     </style>
 </head>
@@ -113,64 +103,54 @@
         </section>
         <section>
             <h2>Stringing Log</h2>
-            <div class="stringing-log">
-                <div class="string-entry">
-                    <div class="row">
-                        <span class="kv"><strong>Date:</strong> 02/25/2026</span>
-                        <span class="kv"><strong>Mains:</strong> VS Touch 1.25 @ 55#</span>
-                        <span class="kv"><strong>Crosses:</strong> Hawk Touch 1.25 @ 52#</span>
-                    </div>
-                    <div class="row">
-                        <span class="kv"><strong>DT:</strong> 37</span>
-                    </div>
-                </div>
-                <div class="string-entry">
-                    <div class="row">
-                        <span class="kv"><strong>Date:</strong> 02/25/2026</span>
-                        <span class="kv"><strong>Mains:</strong> ALU Power Rough 1.25 @ 54#</span>
-                        <span class="kv"><strong>Crosses:</strong> ALU Power 1.20 @ 52#</span>
-                    </div>
-                    <div class="row">
-                        <span class="kv"><strong>DT:</strong> 36</span>
-                    </div>
-                </div>
-                <div class="string-entry">
-                    <div class="row">
-                        <span class="kv"><strong>Date:</strong> 02/13/2026</span>
-                        <span class="kv"><strong>Mains:</strong> VS Touch 1.25 @ 55#</span>
-                        <span class="kv"><strong>Crosses:</strong> Hawk Touch 1.20 @ 53#</span>
-                    </div>
-                    <div class="row">
-                        <span class="kv"><strong>DT:</strong> 37</span>
-                    </div>
-                    <div class="row">
-                        <span class="notes"><strong>Notes:</strong> Previous string job broke after 2 sessions</span>
-                    </div>
-                </div>
-                <div class="string-entry">
-                    <div class="row">
-                        <span class="kv"><strong>Date:</strong> 02/12/2026</span>
-                        <span class="kv"><strong>Mains:</strong> VS Touch 1.25 @ 60#</span>
-                        <span class="kv"><strong>Crosses:</strong> Hawk Touch 1.20 @ 59#</span>
-                    </div>
-                    <div class="row">
-                        <span class="kv"><strong>DT:</strong> 40</span>
-                    </div>
-                    <div class="row">
-                        <span class="notes"><strong>Notes:</strong> Teemu says it played too tight; try same strings at 57# for cross/main. BROKE after 2 sessions.</span>
-                    </div>
-                </div>
-                <div class="string-entry">
-                    <div class="row">
-                        <span class="kv"><strong>Date:</strong> 02/02/2026</span>
-                        <span class="kv"><strong>Mains:</strong> VS Touch 130 @ 57#</span>
-                        <span class="kv"><strong>Crosses:</strong> Hawk Touch 130 @ 55#</span>
-                    </div>
-                    <div class="row">
-                        <span class="kv"><strong>DT:</strong> 38</span>
-                    </div>
-                </div>
-            </div>
+            <table class="stringing-log">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Mains</th>
+                        <th>Crosses</th>
+                        <th>DT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>02/25/2026</td>
+                        <td>VS Touch 1.25 @ 55#</td>
+                        <td>Hawk Touch 1.25 @ 52#</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>02/25/2026</td>
+                        <td>ALU Power Rough 1.25 @ 54#</td>
+                        <td>ALU Power 1.20 @ 52#</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>02/13/2026</td>
+                        <td>VS Touch 1.25 @ 55#</td>
+                        <td>Hawk Touch 1.20 @ 53#</td>
+                        <td>37</td>
+                    </tr>
+                    <tr class="notes-row">
+                        <td colspan="4">Previous string job broke after 2 sessions</td>
+                    </tr>
+                    <tr>
+                        <td>02/12/2026</td>
+                        <td>VS Touch 1.25 @ 60#</td>
+                        <td>Hawk Touch 1.20 @ 59#</td>
+                        <td>40</td>
+                    </tr>
+                    <tr class="notes-row">
+                        <td colspan="4">Teemu says it played too tight; try same strings at 57# for cross/main. BROKE after 2 sessions.</td>
+                    </tr>
+                    <tr>
+                        <td>02/02/2026</td>
+                        <td>VS Touch 130 @ 57#</td>
+                        <td>Hawk Touch 130 @ 55#</td>
+                        <td>38</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer>
