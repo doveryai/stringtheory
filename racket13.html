@@ -8,61 +8,67 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .racket-specs {
-            margin: 2rem 0;
+            margin: 2rem auto;
             padding: 1rem;
             background: #f8f8f8;
             border-radius: 8px;
             max-width: 800px;
         }
-
         .specs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
         }
-
         .specs-section {
             margin-bottom: 1rem;
         }
-
         .specs-section h3 {
             margin-bottom: 0.5rem;
             color: #333;
         }
-
         .racket-image {
             max-width: 300px;
             display: block;
             margin: 2rem auto 1rem auto;
         }
-
         .stringing-log {
             width: 100%;
             border-collapse: collapse;
-            margin: 2rem 0;
+            margin: 2rem auto;
+            max-width: 800px;
         }
-
-        .stringing-log th,
-        .stringing-log td {
+        .stringing-log th, .stringing-log td {
             border: 1px solid #ccc;
             padding: 0.5rem;
             text-align: center;
+            white-space: nowrap;
         }
-
         .stringing-log th {
             background: #eaeaea;
         }
-
+        .note-icon {
+            position: relative;
+            cursor: help;
+            margin-left: 0.25rem;
+        }
+        .note-icon:hover::after {
+            content: attr(data-note);
+            position: absolute;
+            left: 1.5rem;
+            top: -0.25rem;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            white-space: normal;
+            width: 250px;
+            font-size: 0.85rem;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
         @media (max-width: 600px) {
-
-            .racket-specs,
-            .stringing-log {
-                font-size: 0.95em;
-            }
-
-            .racket-image {
-                max-width: 90vw;
-            }
+            .racket-specs, .stringing-log { font-size: 0.95em; }
+            .racket-image { max-width: 90vw; }
         }
     </style>
 </head>
@@ -131,56 +137,56 @@
                 <tbody>
                     <tr>
                         <td>12/6/2025 <span class="note-icon" data-note="Weight modification: 10g silicone in handle; 8g lead at 10 and 2 o'clock">📝</span></td>
-                        <td>VS Touch 130 @ 56#</td>
-                        <td>ALU Power 125 @ 54.5#</td>
+                        <td>VS Touch 1.30 @ 56#</td>
+                        <td>ALU Power 1.25 @ 54.5#</td>
                         <td>36</td>
                     </tr>
                     <tr>
                         <td>11/23/2025</td>
-                        <td>VS Touch 125 @ 56#</td>
-                        <td>ALU Power 120 @ 55#</td>
+                        <td>VS Touch 1.25 @ 56#</td>
+                        <td>ALU Power 1.20 @ 55#</td>
                         <td>38</td>
                     </tr>
                     <tr>
                         <td>11/20/2025</td>
-                        <td>VS Touch 125 @ 54#</td>
-                        <td>ALU Power 125 @ 54#</td>
+                        <td>VS Touch 1.25 @ 54#</td>
+                        <td>ALU Power 1.25 @ 54#</td>
                         <td>37</td>
                     </tr>
                     <tr>
                         <td>11/20/2025</td>
-                        <td>VS Touch 125 @ 55#</td>
-                        <td>ALU Power 125 @ 53#</td>
+                        <td>VS Touch 1.25 @ 55#</td>
+                        <td>ALU Power 1.25 @ 53#</td>
                         <td>36</td>
                     </tr>
                     <tr>
                         <td>11/20/2025</td>
-                        <td>VS Touch 125 @ 53#</td>
-                        <td>ALU Power 125 @ 52#</td>
+                        <td>VS Touch 1.25 @ 53#</td>
+                        <td>ALU Power 1.25 @ 52#</td>
                         <td>35</td>
                     </tr>
                     <tr>
                         <td>09/26/2025</td>
-                        <td>VS Touch 125 @ 54#</td>
-                        <td>ALU Power 125 @ 54#</td>
+                        <td>VS Touch 1.25 @ 54#</td>
+                        <td>ALU Power 1.25 @ 54#</td>
                         <td>37</td>
                     </tr>
                     <tr>
                         <td>07/25/2025</td>
-                        <td>VS Touch 125 @ 53#</td>
-                        <td>ALU Power 125 @ 52#</td>
+                        <td>VS Touch 1.25 @ 53#</td>
+                        <td>ALU Power 1.25 @ 52#</td>
                         <td>38</td>
                     </tr>
                     <tr>
                         <td>6/18/2025 <span class="note-icon" data-note="80F outside">📝</span></td>
-                        <td>RPM Blast 125 @ 53#</td>
-                        <td>VS Touch 130 @ 53#</td>
+                        <td>RPM Blast 1.25 @ 53#</td>
+                        <td>VS Touch 1.30 @ 53#</td>
                         <td>37</td>
                     </tr>
                     <tr>
                         <td>5/30/2025 <span class="note-icon" data-note="Hot day (high nineities outside)">📝</span></td>
-                        <td>VS Touch 130 (black) @ 55#</td>
-                        <td>ALU Power 125 @ 53#</td>
+                        <td>VS Touch 1.30 (black) @ 55#</td>
+                        <td>ALU Power 1.25 @ 53#</td>
                         <td>37</td>
                     </tr>
                 </tbody>

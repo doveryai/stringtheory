@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .racket-specs {
-            margin: 2rem 0;
+            margin: 2rem auto;
             padding: 1rem;
             background: #f8f8f8;
             border-radius: 8px;
@@ -21,7 +21,7 @@
         .stringing-log {
             width: 100%;
             border-collapse: collapse;
-            margin: 2rem 0;
+            margin: 2rem auto;
             max-width: 800px;
         }
         .stringing-log th, .stringing-log td {
@@ -120,6 +120,7 @@
             <h2>Stringing Log</h2>
             <!-- 
                 Table format: Date | Mains | Crosses | DT
+                - Gauge format: Use decimal notation (1.25, 1.30, 1.20) not integer (125, 130, 120)
                 - Mains column: String type + gauge @ tension (e.g., "VS Touch 1.25 @ 55#")
                 - Crosses column: String type + gauge @ tension (e.g., "Hawk Touch 1.20 @ 52#")
                 - Notes: Add 📝 icon next to date with data-note attribute for hover tooltip
