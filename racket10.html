@@ -34,14 +34,36 @@
             width: 100%;
             border-collapse: collapse;
             margin: 2rem 0;
+            max-width: 800px;
         }
         .stringing-log th, .stringing-log td {
             border: 1px solid #ccc;
             padding: 0.5rem;
             text-align: center;
+            white-space: nowrap;
         }
         .stringing-log th {
             background: #eaeaea;
+        }
+        .note-icon {
+            position: relative;
+            cursor: help;
+            margin-left: 0.25rem;
+        }
+        .note-icon:hover::after {
+            content: attr(data-note);
+            position: absolute;
+            left: 1.5rem;
+            top: -0.25rem;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            white-space: normal;
+            width: 250px;
+            font-size: 0.85rem;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         @media (max-width: 600px) {
             .racket-specs, .stringing-log { font-size: 0.95em; }
@@ -99,59 +121,41 @@
                 <thead>
                     <tr>
                         <th>Date</th>
-                        <th>Main Strings</th>
-                        <th>Main Tension</th>
-                        <th>Cross Strings</th>
-                        <th>Cross Tension</th>
+                        <th>Mains</th>
+                        <th>Crosses</th>
                         <th>DT</th>
-                        <th>Notes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>12/7/2025</td>
-                        <td>HyperG 125</td>
-                        <td>54.5#</td>
-                        <td>Hawk Touch 120</td>
-                        <td>54.5#</td>
+                        <td>HyperG 125 @ 54.5#</td>
+                        <td>Hawk Touch 120 @ 54.5#</td>
                         <td>38</td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>11/20/2025</td>
-                        <td>Hawk Touch 120</td>
-                        <td>55#</td>
-                        <td>Hawk Touch 120</td>
-                        <td>55#</td>
+                        <td>Hawk Touch 120 @ 55#</td>
+                        <td>Hawk Touch 120 @ 55#</td>
                         <td>39</td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>11/20/2025</td>
-                        <td>ALU Power 125</td>
-                        <td>51#</td>
-                        <td>ALU Power Rough 125</td>
-                        <td>51#</td>
+                        <td>ALU Power 125 @ 51#</td>
+                        <td>ALU Power Rough 125 @ 51#</td>
                         <td>33</td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>07/25/2025</td>
-                        <td>VS Touch 130</td>
-                        <td>53#</td>
-                        <td>ALU Power 125</td>
-                        <td>53#</td>
+                        <td>VS Touch 130 @ 53#</td>
+                        <td>ALU Power 125 @ 53#</td>
                         <td>38</td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>05/30/2025</td>
-                        <td>ALU Power Rough</td>
-                        <td>55#</td>
-                        <td>VS Touch 130</td>
-                        <td>55#</td>
+                        <td>ALU Power Rough @ 55#</td>
+                        <td>VS Touch 130 @ 55#</td>
                         <td>39</td>
-                        <td></td>
                     </tr>
                 </tbody>
             </table>
