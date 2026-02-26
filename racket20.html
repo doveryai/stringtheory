@@ -45,11 +45,25 @@
         .stringing-log th {
             background: #eaeaea;
         }
-        .stringing-log .notes-row td {
-            text-align: left;
-            font-style: italic;
-            color: #666;
+        .note-icon {
+            position: relative;
+            cursor: help;
+            margin-left: 0.25rem;
+        }
+        .note-icon:hover::after {
+            content: attr(data-note);
+            position: absolute;
+            left: 1.5rem;
+            top: -0.25rem;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
             white-space: normal;
+            width: 250px;
+            font-size: 0.85rem;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         @media (max-width: 600px) {
             .racket-specs, .stringing-log { font-size: 0.95em; }
@@ -126,22 +140,16 @@
                         <td>36</td>
                     </tr>
                     <tr>
-                        <td>02/13/2026</td>
+                        <td>02/13/2026 <span class="note-icon" data-note="Previous string job broke after 2 sessions">📝</span></td>
                         <td>VS Touch 1.25 @ 55#</td>
                         <td>Hawk Touch 1.20 @ 53#</td>
                         <td>37</td>
                     </tr>
-                    <tr class="notes-row">
-                        <td colspan="4">Previous string job broke after 2 sessions</td>
-                    </tr>
                     <tr>
-                        <td>02/12/2026</td>
+                        <td>02/12/2026 <span class="note-icon" data-note="Teemu says it played too tight; try same strings at 57# for cross/main. BROKE after 2 sessions.">📝</span></td>
                         <td>VS Touch 1.25 @ 60#</td>
                         <td>Hawk Touch 1.20 @ 59#</td>
                         <td>40</td>
-                    </tr>
-                    <tr class="notes-row">
-                        <td colspan="4">Teemu says it played too tight; try same strings at 57# for cross/main. BROKE after 2 sessions.</td>
                     </tr>
                     <tr>
                         <td>02/02/2026</td>
