@@ -5,78 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tennis Racket - Racket 14</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .racket-specs {
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #f8f8f8;
-            border-radius: 8px;
-            max-width: 800px;
-        }
-        .specs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-        .specs-section {
-            margin-bottom: 1rem;
-        }
-        .specs-section h3 {
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-        .racket-image {
-            max-width: 300px;
-            display: block;
-            margin: 2rem auto 1rem auto;
-        }
-        .stringing-log {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem auto;
-            max-width: 800px;
-        }
-        .stringing-log th, .stringing-log td {
-            border: 1px solid #ccc;
-            padding: 0.5rem;
-            text-align: center;
-            white-space: nowrap;
-        }
-        .stringing-log th {
-            background: #eaeaea;
-        }
-        .note-icon {
-            position: relative;
-            cursor: help;
-            margin-left: 0.25rem;
-        }
-        .note-icon:hover::after {
-            content: attr(data-note);
-            position: absolute;
-            left: 1.5rem;
-            top: -0.25rem;
-            background: #333;
-            color: #fff;
-            padding: 0.5rem 0.75rem;
-            border-radius: 4px;
-            white-space: normal;
-            width: 250px;
-            font-size: 0.85rem;
-            z-index: 10;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-        @media (max-width: 600px) {
-            .racket-specs, .stringing-log { font-size: 0.95em; }
-            .racket-image { max-width: 90vw; }
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Racket 14 - Head Graphene 360+ Prestige Pro 2020</h1>
     </header>
     <main>
-        <img src="img/racket14.png" alt="Tennis Racket 14" class="racket-image">
+        <img src="img/racket14.png" alt="Head Graphene 360+ Prestige Pro 2020" class="racket-image">
         <section class="racket-specs">
             <h2>Racket Specifications</h2>
             <div class="specs-grid">
@@ -115,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="stringing-section">
             <h2>Stringing Log</h2>
             <table class="stringing-log">
                 <thead>
@@ -141,4 +76,4 @@
         <p>&copy; 2024 Tennis Racket Log. All rights reserved.</p>
     </footer>
 </body>
-</html> 
+</html>
